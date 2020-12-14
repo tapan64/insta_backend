@@ -5,7 +5,7 @@ const dataRoute = require("./routes/dataRoute.js");
 const userRoute = require("./routes/userRoute.js");
 const app = express();
 
-const port = process.env.PORT || 5000;
+const port = process.env.MY_PORT || 5000;
 
 app.use(express.json());
 app.use("/data", dataRoute);
